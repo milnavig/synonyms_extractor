@@ -31,7 +31,7 @@ saxStream.on("opentag", function (node) {
 saxStream.on("text", function (text) {
     // same object as above
     if (toggle_title) {
-        current_object.title = text;
+        current_object.word = text;
         toggle_title = false;
     }
     if (toggle_text) {
